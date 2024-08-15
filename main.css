@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+#rotationIcon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#rotationIcon:hover {
+    opacity: 1;
+}
+
+#cubeCanvas {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+#solutionButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+#solutionOutput {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+}
